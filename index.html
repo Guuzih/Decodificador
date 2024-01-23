@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+    <main>
+       <section class="container">
+        
+        <div class="logo">
+            <img src="./assets/Logo.png" alt="logo" class="container_logo">
+        </div>
+        <div class="codificar_container">
+
+            <div class="texto_codificar">
+                <input type="text" value="Digite seu texto" class="container__input">
+            </div>
+
+            <div class="botao_texto">
+                <div class="texto">
+                    <img src="./assets/bi_exclamation-circle-fill.jpg" alt="exclamation-circle-fill" class="img_exclamation">
+                <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+               <div class="botoes_conteiner">
+                <button onclick="codificador()" id="codificar_texto" class="botoes_codificar">Criptografar</button>
+                <button onclick="decodificar()" id="decodificar_texto" class="botoes_codificar">Descriptografar</button>
+               </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="texto_container"> 
+
+            <div id="texto_semTexto" class="texto_semTexto">
+                <img src="./assets/High quality products 1 1.png" class="img_sem_texto">
+            <h1>Nenhuma mensagem encontra</h1>
+            <p>Digite um texto que você deseja Criptografar ou Descriptografar</p>
+            </div>
+            <div id="texto_comTexto" class="texto_comTexto">
+                <h2>texto</h2>
+                <button onclick="copiarTexto()" id="copiar_texto" class="botoes_codificar">Copiar</button>
+            </div>
+
+        </div>
+       </section>
+    </main>
+
+    <script src="./app.js" defer>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('texto_semTexto').style.display = 'block';
+            document.getElementById('texto_comTexto').style.display = 'none';
+        })
+    </script>
+</body>
+</html>
