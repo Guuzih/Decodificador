@@ -17,7 +17,7 @@
         <div class="codificar_container">
 
             <div class="texto_codificar">
-                <input type="text" value="Digite seu texto" class="container__input">
+                <textarea class="container__input" placeholder="Digite seu texto"></textarea>
             </div>
 
             <div class="botao_texto">
@@ -38,12 +38,13 @@
 
             <div id="texto_semTexto" class="texto_semTexto">
                 <img src="./assets/High quality products 1 1.png" class="img_sem_texto">
-            <h1>Nenhuma mensagem encontra</h1>
-            <p>Digite um texto que você deseja Criptografar ou Descriptografar</p>
+            <h1 >Nenhuma mensagem encontra</h1>
+            <p id="textoInicio">Digite um texto que você deseja Criptografar ou Descriptografar</p>
             </div>
             <div id="texto_comTexto" class="texto_comTexto">
                 <h2>texto</h2>
-                <button onclick="copiarTexto()" id="copiar_texto" class="botoes_codificar">Copiar</button>
+                <button onclick="copiarTexto()" id="copiar_texto" class="botoes_copiar">Copiar</button>
+                <h3></h3>
             </div>
 
         </div>

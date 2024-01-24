@@ -10,7 +10,7 @@ function exibirTextoNaTela(tag, texto) {
 
 const codificador = () => {
 
-    let texto = document.querySelector('input').value;
+    let texto = document.querySelector('textarea').value;
 
     texto = texto.split(" ");
     let textoCodificado="";
@@ -45,7 +45,7 @@ const codificador = () => {
 };
 
 const decodificar = () => {
-    let texto = document.querySelector('input').value;
+    let texto = document.querySelector('textarea').value;
 
     texto = texto.split(" ");
     let textoDecodificado = "";
@@ -66,3 +66,8 @@ const decodificar = () => {
      document.getElementById('texto_comTexto').style.display = 'block';
     exibirTextoNaTela("h2", textoDecodificado);
 };
+
+const copiarTexto = () => {
+            const textoCopiar = document.getElementById('texto_comTexto').querySelector('h2').innerText;
+            navigator.clipboard.writeText(textoCopiar)
+        };
