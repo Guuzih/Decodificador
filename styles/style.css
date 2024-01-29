@@ -279,6 +279,11 @@ h2,
         margin-top: 2rem;
     }
 
+    .botao_texto{
+        display: flex;
+        flex-direction: column;
+    }
+
     .texto_container {
         width: 100%;
         margin-bottom: 1rem;
