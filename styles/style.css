@@ -66,7 +66,6 @@ body {
     justify-content: space-between;
     display: flex;
     flex-shrink: 0;
-    gap: 2rem; 
 }
 
 .texto {
@@ -214,7 +213,7 @@ h2,
  
     .container {
         flex-direction: column;
-        margin: 1rem;
+        margin: 0rem;
         padding: 1rem;
         width: 100%;
         box-sizing: border-box;
@@ -267,7 +266,7 @@ h2,
 
     .container {
         flex-direction: column;
-        margin: 1rem;
+        margin: 0rem;
         padding: 1rem;
         width: 100%;
         box-sizing: border-box;
